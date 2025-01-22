@@ -1,6 +1,9 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height for body */
 }
 
 .navbar {
@@ -17,27 +20,6 @@ body {
     font-weight: bold;
 }
 
-.nav-links {
-    list-style-type: none;
-    display: flex;
-    gap: 20px;
-}
-
-.nav-links li {
-    display: inline;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #262626; /*Instagram link color */
-    font-weight: 500;
-    padding: 8px 12px;
-}
-
-.nav-links a:hover {
-    color: #0095f6; /* Change color on hover */
-}
-
 .icons {
     display: flex;
     gap: 20px;
@@ -51,4 +33,33 @@ body {
 
 .icons a:hover {
     color: #0095f6; /* Change color on hover */
-}   
+}
+
+.bottom-nav {
+    margin-top: auto; /* Push bottom-nav to the bottom */
+    background-color: #ffffff;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around; /* Spread links evenly */
+    padding: 10px 0; /* Vertical padding */
+    margin: 0; /* Reset margins */
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #262626; /* Instagram link color */
+    font-weight: 500;
+    padding: 8px 12px;
+}
+
+.nav-links a:hover {
+    color: #0095f6; /* Change color on hover */
+}
